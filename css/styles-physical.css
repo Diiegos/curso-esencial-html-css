@@ -1,0 +1,352 @@
+:root{
+  --gray30: #212121;
+  --gray20: #424242;
+  --gray10: #616161;
+  --footer: #212429;
+  --negro: #000000;
+
+
+}
+
+.hero{
+  height: 50px;
+  background: linear-gradient(3.36deg, #212325 -63.62%, rgba(255, 255, 255, 0) 43.49%), url(/img/patron-1.png);
+
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+margin:0;
+}
+
+body p{
+ color: var(--gray20);
+}
+
+header{
+font-size: 14px;
+margin-block-start: 20px;
+}
+
+.header{
+
+}
+
+.header-content{
+  padding: 20px;
+
+  }
+
+
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+header a:hover{
+  color: var(--gray30);
+}
+
+
+
+nav details summary{
+   font-weight: bold;
+    color: var(--gray10);
+    line-height: 24px;
+    outline: none;
+}
+
+nav details summary:hover{
+  cursor: pointer;
+}
+
+
+
+nav details ol{
+  color: var(--gray10);
+}
+
+header li{
+  margin-bottom: 16px;
+}
+
+h1{
+  font-size: 2em;
+  color: var(--gray30);
+ font-weight: 400;
+ margin-inline: 10px;
+
+}
+
+hr{
+
+  margin: 64px 0;
+}
+
+h2{
+  font-size: 2em;
+  color: var(--gray30);
+  font-weight: normal;
+  margin: 64px 0 40px ;
+}
+
+h3{
+  font-size: 1.5em;
+  color: var(--gray20);
+  font-weight: normal;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  position: sticky;
+  top: 0px;
+  background: white;
+  padding-bottom: 8px;
+
+}
+
+.wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+.section-content img{
+  margin-top: 40px;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+.section-content h3::before{
+  content:  counter(titleList)". ";
+}
+
+.section-content h3::after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: var(--gray20);
+  display: inline-block;
+  bottom: 0px;
+  left: 0px;
+}
+
+.section-content{
+  margin-top: 164px;
+}
+
+.section-content:first-of-type{
+  margin: 0;
+}
+
+.section-content ul li{
+  margin-bottom: 16px;
+}
+
+.section-content ol li {
+  line-height: 25px;
+}
+
+.section-content + hr{
+  display : none;
+}
+pre{
+  background: #FEC62E;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+
+
+}
+
+blockquote{
+  border-left: 4px solid var(--gray20);
+  padding-left: 16px;
+  margin: 32px 0;
+  line-height: 24px;
+  font-size: 24px;
+  color: var(--gray20);
+
+}
+
+blockquote span{
+  color: var(--gray10);
+}
+
+blockquote span::before{
+  content: '-';
+}
+
+
+
+.image-big{
+  width: 100%;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.main-content{
+  background:white;
+
+}
+
+
+
+.section-form{
+  margin-top: 72px;
+}
+
+.section-form h3{
+  margin-top: 40px ;
+}
+
+
+
+.slider-content{
+/* block-size: 100px; */
+display: block;
+overflow: auto;
+scroll-behavior: smooth;
+white-space: nowrap;
+font-size: 0;
+}
+
+.video{
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+  /* border: 1px sol  id yellow; */
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet{
+  block-size: 15px;
+  inline-size: 15px;
+  background: black;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.form{
+  text-align: center;
+}
+
+.form input{
+ inline-size: 100%;
+ box-sizing: border-box;
+ padding-inline: 16px;
+ padding-block: 12px;
+  height: 48px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  border: 1px solid black;
+  margin-block-end: 24px;
+  display: block;
+  outline: none;
+
+
+}
+
+.form input[type="submit"]{
+  background: blue;
+  color: white;
+  border: none;
+}
+
+.footer{
+  block-size: 80px ;
+  inline-size: 100%;
+ background: #212429;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.footer h3{
+  color: #FFFFFF;
+  font-weight: 400;
+  margin: 0;
+  background: #212429;
+ ;
+
+}
+
+.footer-img img{
+  width: 12px;
+  height: 12px;
+  margin-inline-end: 22px;
+  margin-block-start: 14px;
+
+}
+
+@media screen and (min-width: 1350px){
+
+
+
+  .hero{
+    height: 350px;
+
+  }
+
+  header{
+  font-size: 14px;
+  position: absolute;
+  top: 64px;
+  left: -218px;
+  width: 188px;
+  height: 496px;
+
+  }
+
+  .header{
+    position: sticky;
+    top: 0px;
+  }
+
+  .header-content{
+    position: relative;
+    }
+
+  h1{
+    font-size: 4em;
+    color: var(--gray30);
+   margin: 64px 10px 16px 10px;
+   font-weight: 400;
+
+  }
+
+   .image-big{
+     width: 902;
+     height: 496px;
+   }
+
+   .wrapper{
+     width:902px;
+     margin: auto;
+   }
+
+  pre{
+    background: #FEC62E;
+    padding:40px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
+}
+
+
+
