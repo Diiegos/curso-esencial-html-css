@@ -276,15 +276,12 @@ border-radius: 90px;
 box-sizing: border-box;
 outline: none;
 border: 1px solid var(--gray20);
-
+color: var(--gray10);
 }
 
-.mailto{
-  color: #157EFB;
 
-}
 
-.form input[type="submit"]{
+.submit{
   background: black;
   color: white;
   width: 119px;
@@ -296,6 +293,7 @@ border: 1px solid var(--gray20);
   outline: none;
   z-index: 2;
   cursor: pointer;
+  border: none;
 
 }
 
@@ -303,7 +301,7 @@ border: 1px solid var(--gray20);
   margin-top: 0 ;
 }
 
-.form input[type="submit"]:hover{
+.submit:hover{
   background: var(--gray10);
 }
 
@@ -327,6 +325,7 @@ border: 1px solid var(--gray20);
  ;
 
 }
+
 
 .footer-img img{
   width: 12px;
