@@ -37,6 +37,10 @@ margin-block-start: 20px;
 
   }
 
+.setup{
+  margin-bottom: 0;
+}
+
 
 header a {
   color: var(--gray10);
@@ -102,6 +106,10 @@ h3{
 
 }
 
+.main{
+  padding: 3px;
+}
+
 .wrapper{
   width: 100%;
   margin: auto;
@@ -131,19 +139,23 @@ h3{
 }
 
 .section-content{
-  margin-top: 164px;
+  margin-top: 64px;
 }
 
 .section-content:first-of-type{
   margin: 0;
 }
 
-.section-content ul li{
+.modelo-caja ul li{
   margin-bottom: 16px;
+
 }
 
-.section-content ol li {
+.modelo-caja ol li {
   line-height: 25px;
+  margin-bottom: 16px;
+
+
 }
 
 .section-content + hr{
@@ -232,35 +244,67 @@ font-size: 0;
 .slider-bullet{
   block-size: 15px;
   inline-size: 15px;
-  background: black;
+  background: var(--gray10);
   display: inline-block;
   border-radius: 50%;
 }
 
-.form{
-  text-align: center;
+.slider-bullet:active{
+  background: var(--negro);
 }
 
-.form input{
- inline-size: 100%;
- box-sizing: border-box;
- padding-inline: 16px;
- padding-block: 12px;
-  height: 48px;
-  border-radius: 10px;
-  margin-bottom: 24px;
-  border: 1px solid black;
-  margin-block-end: 24px;
-  display: block;
-  outline: none;
+.slider p{
+  padding: 40px 0;
+}
 
+.slider a{
+  color: black;
+  text-decoration: none;
+}
+
+.form{
+  margin-bottom: 130px;
+}
+
+
+
+.form input{
+width: 280px;
+height: 48px;
+padding: 12px 16px;
+border-radius: 90px;
+box-sizing: border-box;
+outline: none;
+border: 1px solid var(--gray20);
+
+}
+
+.mailto{
+  color: #157EFB;
 
 }
 
 .form input[type="submit"]{
-  background: blue;
+  background: black;
   color: white;
-  border: none;
+  width: 119px;
+  height: 48px;
+  padding: 12px 16px;
+  border-radius: 90px;
+  position: relative;
+  right: 80px;
+  outline: none;
+  z-index: 2;
+  cursor: pointer;
+
+}
+
+.suscribete{
+  margin-top: 0 ;
+}
+
+.form input[type="submit"]:hover{
+  background: var(--gray10);
 }
 
 .footer{
@@ -338,12 +382,24 @@ font-size: 0;
      margin: auto;
    }
 
+   .section-content ul li{
+    line-height: 24px;
+    margin-bottom: 16px;
+   }
+
   pre{
     background: #FEC62E;
     padding:40px;
     line-height: 24px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+  }
+
+
+
+
+  .footer{
+    height: 174px;
   }
 
 }
